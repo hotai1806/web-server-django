@@ -1,0 +1,15 @@
+<head >
+
+<title>Server sites Administration</title>
+<link rel="icon" href="..\polls\static\image\5176d189ff929acc
+                        8d29a2e5f0466e18798db436.ico">
+</head>
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Polls Administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
